@@ -20,7 +20,7 @@ const Form = () => {
   const [employees, SetEmployees] = useState([]);
 
   const fetchData = () => {
-    fetch('http://localhost:3001/employees')
+    fetch('https://employee-form-api.onrender.com/employees')
         .then(response => {
             if (!response.ok)
                 throw new Error(`Http Error! Status ${response.status}`);
@@ -46,7 +46,7 @@ const Form = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try{
-      const response = await fetch('http://localhost:3001/',{
+      const response = await fetch('https://employee-form-api.onrender.com/',{
         method: "POST",
         headers: {
           'Content-Type' : 'application/json',
