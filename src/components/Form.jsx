@@ -157,12 +157,9 @@ const Form = () => {
               <th>Age</th>
               <th>Address</th>
               <th>State</th>
-              <th>Department</th>
               <th>Designation</th>
-              <th>Joining Date</th>
               <th>Experience</th>
               <th>Salary</th>
-              <th>Phone No</th>
             </tr>
           </thead>
           <tbody>
@@ -175,12 +172,9 @@ const Form = () => {
                 <td>{employee.age}</td>
                 <td>{employee.address}</td>
                 <td>{employee.state}</td>
-                <td>{employee.department}</td>
                 <td>{employee.designation}</td>
-                <td>{handleDate(employee.joining_date)}</td>
                 <td>{employee.experience}</td>
                 <td>{employee.salary}</td>
-                <td>{employee.phone_no}</td>
               </tr>
             ))}
           </tbody>
